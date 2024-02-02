@@ -1,8 +1,8 @@
 body {
-    background-color:darksalmon ;
+    background-color:rgb(254, 189, 168) ;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
-    font-weight: 300; /* from 100 to 900*/ window
+    font-weight: 300; /* from 100 to 900*/
     font-style: normal;
 }
 
@@ -10,7 +10,7 @@ p {
     color:white;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* from 100 to 900*/ 
+    font-weight: 600; /* from 100 to 900*/ 
     font-style: normal;
 }
 
@@ -40,7 +40,7 @@ text-decoration: underline
         transition: 1s; /* Time of the effect */
 
         float: left;
-        width: 25%;
+        width: 70%;
 
        }
     .nature1:hover {
@@ -55,8 +55,11 @@ text-decoration: underline
 
     .NatureOne {
   display: flex;
-  justify-content: space-between;/* this will add equal space between each image */
-  padding: 5px;
+  flex-direction: row;
+  justify-content: space-evenly;/* this will add equal space between each image */
+  /* justify-content: center; */
+  /* margin: center; */
+
 }
 
 
