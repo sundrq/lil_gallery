@@ -1,0 +1,70 @@
+body {
+    background-color:darksalmon ;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300; /* from 100 to 900*/ window
+    font-style: normal;
+}
+
+p {
+    color:white;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* from 100 to 900*/ 
+    font-style: normal;
+}
+
+h1 {
+    color: black;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* from 100 to 900*/ 
+    font-style: normal;
+    font-size: 50px;
+}
+
+.nature {
+    border: ;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+text-decoration: underline
+}
+
+    .nature1 {
+        transition: 1s; /* Time of the effect */
+
+        float: left;
+        width: 25%;
+
+       }
+    .nature1:hover {
+        transform: scale(1.1); /* Increasing the scale */
+       }
+
+/*   .NatureOne:after {
+  content: "";
+  clear: both;
+  display: table;
+    }                       */
+
+    .NatureOne {
+  display: flex;
+  justify-content: space-between;/* this will add equal space between each image */
+  padding: 5px;
+}
+
+
+
+
+
+
+.NatureTwo {
+    display: flex;
+
+}
