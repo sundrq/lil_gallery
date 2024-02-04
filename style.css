@@ -1,9 +1,16 @@
+*{ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color:rgb(254, 189, 168) ;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: 300; /* from 100 to 900*/
     font-style: normal;
+    width: 100%;
 }
 
 p {
@@ -23,29 +30,32 @@ h1 {
     font-size: 50px;
 }
 
-.nature {
-    border: ;
-
-}
 
 a {
     text-decoration: none;
 }
 
 a:hover{
-text-decoration: underline
+    text-decoration: underline;
 }
 
     .nature1 {
         transition: 1s; /* Time of the effect */
 
-        float: left;
         width: 70%;
+
 
        }
     .nature1:hover {
         transform: scale(1.1); /* Increasing the scale */
-       }
+       }    
+
+
+    .nature2 {
+        transition: 1s;
+        
+        width: 70%;
+    }
 
 /*   .NatureOne:after {
   content: "";
@@ -54,20 +64,28 @@ text-decoration: underline
     }                       */
 
     .NatureOne {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;/* this will add equal space between each image */
-  /* justify-content: center; */
+        display: flex;
+        flex-direction: row;
+        justify-content: end; /* this will add equal space between each image */
+        align-items: center;
+        margin-left: 10px;
+
   /* margin: center; */
+}
+
+#Nature {
+    width: 100%;
+}
+
+    .NatureTwo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; /* this will add equal space between each image */
+        align-items: center;
 
 }
 
+tak prosto ya sama mayu ce nu ni.. mozhe buty problema v html i divah bo ya 
 
-
-
-
-
-.NatureTwo {
-    display: flex;
-
-}
+tak ye ale ostannogo commitu nema 
+ok sori ya ne chula
