@@ -13,6 +13,10 @@ body {
     width: 100%;
 }
 
+html {
+    width: 100%;
+}
+
 p {
     color:white;
     font-family: "Raleway", serif;
@@ -42,8 +46,7 @@ a:hover{
     .nature1 {
         transition: 1s; /* Time of the effect */
 
-        width: 70%;
-
+        width: 446.91px;
 
        }
     .nature1:hover {
@@ -54,7 +57,7 @@ a:hover{
     .nature2 {
         transition: 1s;
         
-        width: 70%;
+        width: 446,91px;
     }
 
 /*   .NatureOne:after {
@@ -66,9 +69,9 @@ a:hover{
     .NatureOne {
         display: flex;
         flex-direction: row;
-        justify-content: end; /* this will add equal space between each image */
+        justify-content: space-evenly; /* this will add equal space between each image */
         align-items: center;
-        margin-left: 10px;
+        /*margin-left: 10px;*/
 
   /* margin: center; */
 }
@@ -77,6 +80,7 @@ a:hover{
     width: 100%;
 }
 
+
     .NatureTwo {
         display: flex;
         flex-direction: row;
@@ -84,8 +88,3 @@ a:hover{
         align-items: center;
 
 }
-
-tak prosto ya sama mayu ce nu ni.. mozhe buty problema v html i divah bo ya 
-
-tak ye ale ostannogo commitu nema 
-ok sori ya ne chula
