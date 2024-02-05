@@ -1,11 +1,6 @@
 <DOCTYPE html>
   <html>
     <head>
-      <style>
-        table {
-          border: 1 px solid #000000; 
-        }
-      </style>
     </head>
     <body>
       <table>
