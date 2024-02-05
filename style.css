@@ -13,58 +13,78 @@ body {
     width: 100%;
 }
 
-html {
+    html {
+        width: 100%;
+    }
+
+        p {
+            color:white;
+            font-family: "Raleway", serif;
+            font-optical-sizing: auto;
+            font-weight: 600; /* from 100 to 900*/ 
+            font-style: normal;
+        }
+        
+        h1 {
+            margin: 0;
+            padding: 0;
+            
+            color: black;
+            font-family: "Raleway", serif;
+            font-optical-sizing: auto;
+            font-weight: 700; /* from 100 to 900*/ 
+            font-style: normal;
+            font-size: 50px;
+        }
+        
+        
+        a {
+            text-decoration: none;
+        }
+        
+            a:hover{
+                text-decoration: underline;
+            }
+            
+        #NatureTitle:hover {
+
+            -webkit-user-select: none;
+            user-select: none;
+
+            display: block;
+            margin: 0;
+
+            transition: 1s;
+            text-transform:;
+
+        }
+
+#Nature {
     width: 100%;
-}
-
-p {
-    color:white;
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: 600; /* from 100 to 900*/ 
-    font-style: normal;
-}
-
-h1 {
-    color: black;
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: 700; /* from 100 to 900*/ 
-    font-style: normal;
-    font-size: 50px;
-}
-
-
-a {
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
 }
 
     .nature1 {
         transition: 1s; /* Time of the effect */
 
-        width: 446.91px;
+        width: 546.91px;
 
-       }
-    .nature1:hover {
-        transform: scale(1.1); /* Increasing the scale */
-       }    
+        padding: 50px;
+
+    }
+        .nature1:hover {
+            transform: scale(1.1); /* Increasing the scale */
+        }    
 
 
     .nature2 {
         transition: 1s;
         
-        width: 446,91px;
+        width: 546.91px;
     }
+        .nature2:hover {
+            transform: scale(1.1);
+        }
 
-/*   .NatureOne:after {
-  content: "";
-  clear: both;
-  display: table;
-    }                       */
 
     .NatureOne {
         display: flex;
@@ -72,14 +92,7 @@ a:hover{
         justify-content: space-evenly; /* this will add equal space between each image */
         align-items: center;
         /*margin-left: 10px;*/
-
-  /* margin: center; */
 }
-
-#Nature {
-    width: 100%;
-}
-
 
     .NatureTwo {
         display: flex;
@@ -88,3 +101,4 @@ a:hover{
         align-items: center;
 
 }
+
