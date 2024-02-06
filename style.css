@@ -46,7 +46,7 @@ body {
             user-select: none;
 
             color: black;
-            background: linear-gradient(175deg, black 50%, white calc(50% + 1px));
+            background: linear-gradient(-3deg, white 50%, black calc(50% + 1px));
             transition: 2s;
             color: transparent;
 
@@ -87,9 +87,19 @@ body {
 
             transition: 1s;
             text-transform:;
-
         } */
 
+
+
+
+        /* .fade
+{
+        opacity:0.5;
+}                       --- opacity for photos, example
+.fade:hover
+{
+        opacity:1;
+} */
 #Nature {
     width: 100%;
 }
@@ -142,6 +152,7 @@ body {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        background-color: black;
 
     }
 
@@ -154,4 +165,19 @@ body {
             transform: scale(1.1);
         }
 
-    
+   
+/*-------------- Slanted/Skewed Div -------------- */ 
+#Nature::before {
+    content: "";
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    height: 100px;
+    background-color: rgb(138, 46, 46);
+    transform: skewY(-3deg);
+}
+
+#TheSecondSector {
+    background-color: black;
+}
