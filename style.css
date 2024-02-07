@@ -27,6 +27,8 @@ body {
             font-weight: 600; /* from 100 to 900*/ 
             font-style: normal;
         }
+
+        /*-------------- HEADINGS --------------*/
         
         h1 {
             margin: auto;
@@ -65,7 +67,7 @@ body {
                 /* color: white; */
             }
         
-
+        /* -------------- URLs -------------- */
 
         
         a {
@@ -76,29 +78,20 @@ body {
                 text-decoration: underline;
             }
             
-        /* #NatureTitle:hover {
-
-            -webkit-user-select: none;
-            user-select: none;
-
-            display: block;
-            margin: 0;
-
-            transition: 1s;
-            text-transform:;
-        } */
 
 
-
-
-        /* .fade
+/* <-------------Example of the opacity settings--------------> */
+        /* .<>
 {
         opacity:0.5;
-}                       --- opacity for photos, example
-.fade:hover
+}                     
+.<>:hover
 {
         opacity:1;
 } */
+
+/* <--------------Nature Section Settings---------------> */
+
 #Nature {
     width: 100%;
     background-size: cover;
@@ -151,6 +144,9 @@ body {
 }
 
 
+/* <-------------Future Second Section's Settings--------------> */
+
+
 #TheSecondSection {
     width: 100%;
     background-color: black;
@@ -179,41 +175,21 @@ body {
         transition: 1s;
         width: 546.91px;
         padding: 50px;
-        padding-top: 150px;;
+        padding-top: 150px;
     }
         .pictures-from-the-second-section:hover {
             transform: scale(1.1);
         }
 
    
-/*-------------- Slanted/Skewed Div -------------- */ 
+/*-------------- Slanted/Skewed Div (2 SECTION)-------------- */ 
 .SectionsDivs {
-
-
-    
-    /* content: "HELLO";
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: -1500px;
-    height: 100px;
-    background-color: rgb(138, 46, 46);
-    transform: skewY(-3deg);
-    padding-bottom: 10px; */
 
     width: 100%;
     position: relative;
 
     
 }
-/* 
-#TheSecondSector {
-    width: 100%;
-    background-position: relative;
-    background-color: black;
-    z-index: 9;
-
-} */
 
 .SectionsDivs:after {
     position: absolute;
