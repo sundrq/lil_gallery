@@ -23,10 +23,17 @@ body {
 
     .popup {
         background-color: white;
+        width: 500px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        z-index: 11;
+        border-radius: 10px;
     }
 
         p {
-            color:white;
+            color: black;
             font-family: "Raleway", serif;
             font-optical-sizing: auto;
             font-weight: 600; /* from 100 to 900*/ 
