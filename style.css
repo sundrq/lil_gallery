@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color:rgb(254, 189, 168) ;
+    background-color:rgb(255, 221, 209) ;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: 300; /* from 100 to 900*/
@@ -150,10 +150,11 @@ body {
 #TheSecondSection {
     width: 100%;
     background-color: black;
+    background-position: center center;
     z-index:9;
 }
 
-    .theSecondSectionrOne {
+    .theSecondSectionOne {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -163,7 +164,7 @@ body {
     }
 
     .theSecondSectionTwo {
-         display: flex;
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
@@ -201,9 +202,17 @@ body {
     content: '';
 }
 
-#Nature:after, #TheSecondSection:after {
+/*#Nature:after,*/ #TheSecondSection:after {
     width: 100%;
     transform-origin: left top;
     transform: skewY(-3deg);
+    border-top: solid;
+    border-width: 50px;
+    /* margin-top: 50px; */
+    border-color: rgb(125, 77, 59) 
+
+
+
 
 }
+
