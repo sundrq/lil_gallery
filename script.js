@@ -1,3 +1,6 @@
-function close() {
-    document.getElementById(".popup").classList.toggle("active"); 
-}
+const body = document.querySelector('body');
+
+
+let unlock = true;
+
+const timeout = 200;

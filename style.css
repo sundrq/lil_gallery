@@ -120,7 +120,7 @@ body {
             }
 
 
-        #buttons {
+        .buttons {
             /* justify-content: center; */
             align-items: center;
             text-align: center;
@@ -134,7 +134,7 @@ body {
             cursor: pointer;
             width: 80px;
             height: 40px;
-            position: center;
+            /* position: center; */
             outline: none;
             border-radius: 5px;
             display: inline-block;
@@ -148,7 +148,7 @@ body {
             text-align: center;
             align-items: center;
             text-decoration: none;
-            align-content: center;
+            /* align-content: center; */
             padding: 0; 
             border: 3px black solid;
 
@@ -169,6 +169,52 @@ body {
                 border: 3px black solid;
         }
 
+        .buttons2 {
+            padding-top: 50px;
+            align-items: center;
+            text-align: center;
+        }
+
+        #confirm_button {
+
+            margin: 10px;
+            cursor: pointer;
+            width: 160px;
+            height: 80px;
+            /* position: center; */
+            outline: none;
+            border-radius: 5px;
+            display: inline-block;
+
+            color: black;
+            background-image: linear-gradient(-3deg, black 50%, white calc(50% + 1px));
+            background-size: 300% 450%;
+
+            font-family: "Raleway". serif;
+            font-size: 35px;
+            text-decoration: none;
+            
+            align-items: center;
+            text-align: center;
+            padding: 0;
+
+            border: 3px black solid;
+            border-radius: 5px;
+
+            transition: 2s;
+        }
+
+            #confirm_button:hover {
+                color: white;
+                transition: 1s;
+                background-position: 0% 100%;
+                /* border: 3px solid rgb(255, 130, 130); */
+                text-align: center;
+                align-items: center;
+                border-radius: 5px;
+                border: 3px black solid;
+
+            }
         /* <-------------- Paragraphs (<p>) --------------> */
 
         p {
