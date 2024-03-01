@@ -10,7 +10,7 @@
         <title>My Lil Photo Gallery</title>
 
         <link rel = "stylesheet" type = "text/css" href = "style.css"/>
-        <link rel = "script" type ""
+        <!-- <link rel = "script" type ""> -->
 
             <div id = "fontsLinks">
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -20,11 +20,11 @@
         <script src = 'script.js'></script>
     </head>
     <body>
-      <div class = "popup">
+      <div class = 'popup_link' id = "popup">
 
         <div class = "popup_body">
 
-        <button id = "close" >&times;</button>
+        <button id = "close" onclick="this.parentNode.parentNode.remove(); return false;">&times;</button>
 
           <p id = "welcome_text">Welcome!</p>
           <p id = "greeting_text">My name is Sandra! I want to present you my little gallery with my photos made on phone camera.</p>
@@ -47,6 +47,8 @@
         
         </div>
         
+          <nav></nav>
+          
         <div id = "Nature" class = "SectorsDivs">
           <div id = "title1"><h1 class = "titles">Nature</h1></div>
 
