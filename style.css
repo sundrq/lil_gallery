@@ -145,7 +145,7 @@ body {
             background-size: 300% 450%;
 
             font-family: "Raleway", serif;
-            font-size: 35px;
+            font-size: 20px;
             text-align: center;
             align-items: center;
             text-decoration: none;
@@ -233,7 +233,7 @@ body {
         p#welcome_text {
             text-align: center;
             font-weight: 700;
-            font-size: 150%;
+            font-size: 40px;
             position: center;
             
 
@@ -242,7 +242,7 @@ body {
         p#greeting_text {
             text-align: left;
             font-weight: 400;
-            font-size: 100%;
+            font-size: 25px;
             padding: 10px;
             padding-top: 50px;
 
@@ -251,7 +251,7 @@ body {
         p#music_yesno {
             text-align: left;
             font-weight: 400;
-            font-size: 100%;
+            font-size: 25px;
             padding: 10px;
             padding-top: 50px;
         }
