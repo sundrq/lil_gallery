@@ -22,11 +22,12 @@
 
     </header>
     <body>
+      
+        <audio id = "audio_music">
+            <source src = "music/perfect-beauty-191271.mp3" type = "audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
 
-    <audio id = "Music1">
-      <source src = "music/perfect-beauty-191271.mp3" type = "audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
       <div class = 'popup_link' id = "popup">
 
         <div class = "popup_body">
@@ -37,10 +38,9 @@
           <p id = "greeting_text">My name is Sandra! I want to present you my little gallery with my photos made on phone camera.</p>
         <div id = "div_bottom_buttons">     
           <p id = "music_yesno">And this page has relaxing music, do you want to turn it on?</p>
-
         <div class = 'buttons'>
-          <button class = "button_class" id = "yes_button" onclick = "playAudio()" type = "button">Yes&#9658</button>
-          <button class = "button_class" id = "no_button" onclick = "pauseAudio()" type = "button">No&#9209</button>
+          <button class = "button_class" id = "yes_button" onclick = "play()" type = "button">Yes&#9658</button>
+          <button class = "button_class" id = "no_button" onclick = "stop()" type = "button">No&#9209</button>
         </div>
 
         <div class = 'buttons2'>
