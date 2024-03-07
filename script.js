@@ -13,8 +13,16 @@ function play(){
 }
 
 function stop(){
-  play()
-  audio_music.stop();
+
+
+  if(count == 1){
+    count = 0;
+    audio_music.pause();
+  }
+
+
+  // play()
+  // audio_music.pause();
   audio_music.currentTime = 0;
 
 }
