@@ -29,7 +29,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 11;
+        z-index: 15;
         align-items: center;
 
     }
@@ -59,7 +59,7 @@ body {
         background-color: rgb(0, 0, 0, 0.7);
         transition: 2s;
         transition-timing-function: linear;
-        z-index: 11;
+        z-index: 16;
     }
 
     .popup_body {
@@ -78,7 +78,7 @@ body {
         padding: 1px 1px;
 
 
-        z-index: 12;
+        z-index: ;
     }
 
         #close {
@@ -272,6 +272,7 @@ body {
             font-weight: 700; /*from 100 to 900 */
             font-style: normal;
             font-size: 80px;
+            /* font-size: 600px; */
             width: 100%;
 
             -webkit-user-select: none;
@@ -344,7 +345,64 @@ body {
             a:hover{
                 text-decoration: underline;
             }
-            
+
+/* -------------- Hover Music Controls Popup Section --------------- */
+
+
+    #musicControlsPopup {
+        width: 50px;
+        height: 100px;
+
+        background-color: rgb(0, 0, 0);
+
+        color: white; 
+
+        position: fixed;
+        top: 50%;
+
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        /* justify-content: flex-end; */
+        /* display: flex; */
+        /* align-items: right; */
+        /* text-align: right; */
+        z-index: 13;
+        right: 0;
+
+        transition: 1s;
+
+        -webkit-user-select: none;
+        text-decoration: none;
+    }
+
+    #musicControlsPopup:hover {
+
+        background-color: white;
+
+        color: black;
+
+        width: 200px;
+        height: 100px;
+        transition: 1s;
+        
+        #musicControlsPopup_p_id {
+            color:black;
+            transition: 1s;
+        }
+        
+    }
+
+    #musicControlsPopup_p_id {
+        text-align: center;
+        position: fixed;
+        color: white;
+        font-size: 40px;
+        transition: 1s;
+    }
+
+
+    
 
 /* <------------- Example of the opacity settings --------------> */
 
