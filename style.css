@@ -358,7 +358,8 @@ body {
         color: white; 
 
         position: fixed;
-        top: 50%;
+        justify-content: space-between;
+        top: 4%;
 
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -377,7 +378,6 @@ body {
     }
 
     #musicControlsPopup:hover {
-
         background-color: white;
 
         color: black;
@@ -386,7 +386,7 @@ body {
         height: 100px;
         transition: 1s;
         
-        #musicControlsPopup_p_id {
+        #musicControlsPopup_p_id { 
             color:black;
             transition: 1s;
         }
@@ -394,8 +394,8 @@ body {
     }
 
     #musicControlsPopup_p_id {
-        text-align: center;
-        position: fixed;
+        text-align: left;
+        position: relative;
         color: white;
         font-size: 40px;
         transition: 1s;
