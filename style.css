@@ -79,7 +79,7 @@ body {
         padding: 1px 1px;
 
 
-        z-index: ;
+        z-index: 15;
     }
 
         #close {
@@ -192,7 +192,7 @@ body {
             background-image: linear-gradient(-3deg, black 50%, white calc(50% + 1px));
             background-size: 300% 450%;
 
-            font-family: "Raleway". serif;
+            font-family: "Raleway" serif;
             font-size: 35px;
             text-decoration: none;
             
@@ -375,7 +375,7 @@ body {
 
         transition: 1s;
 
-        -webkit-user-select: none;
+        user-select: none;
         text-decoration: none;
     }
 
@@ -430,7 +430,8 @@ body {
 
 }
 
-    .nature1 {
+
+    .natureIMGClass {
         transition: 1s; /* Time of the effect */
 
         width: 546.91px;
@@ -440,26 +441,12 @@ body {
         filter: blur(5px);
     }
 
-        .nature1:hover {
+        .natureIMGClass:hover {
             transform: scale(1.1); /* Increasing the scale */
             filter: blur(0px);
+            transition: 1s;
         }   
 
-
-    .nature2 {
-        transition: 1s;
-        
-        width: 546.91px;
-
-        padding: 50px;
-
-        filter: blur(5px);
-    }
-
-        .nature2:hover {
-            transform: scale(1.1);
-            filter: blur(0px);
-        }
 
 
     .NatureOne {
