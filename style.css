@@ -439,18 +439,23 @@ body {
         padding: 50px;
 
         filter: blur(5px);
+
+        transition-timing-function: ease;
     }
 
         .natureIMGClass:hover {
             transform: scale(1.1); /* Increasing the scale */
             filter: blur(0px);
             transition: 1s;
+
+            transition-timing-function: ease-out;
         }   
 
 
 
     .NatureOne {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly; /* this will add equal space between each image */
         align-items: center;
@@ -542,3 +547,45 @@ body {
 
 }
 
+/* .SectionsDivs .NatureOne .NatureTwo .theSecondSectionOne .theSecondSectionTwo .IMG {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
+
+.popupIMG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 14;
+}
+
+.popupIMG img {
+    width: 35%;
+    /* position: fixed; */
+    /* align-items: center; */
+    /* align-self: center; */
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* .popupIMG img {
+    position: fixed;
+    width: 10%;
+    background: rgb(0, 0, 0, 0.9);
+
+} */
+.SectionsDivs .popupIMG span {
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+
+}

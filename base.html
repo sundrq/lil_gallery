@@ -61,8 +61,8 @@
     <div id = "musicControlsPopup">
 
       <div id = "muiscSymbol">
-        <p id = "musicControlsPopup_p_id">♫
-          <!-- &#127926   -->  </p> 
+        <span id = "musicControlsPopup_p_id">♫
+          <!-- &#127926   -->  </span> 
       </div>
 
       <div>
@@ -75,19 +75,24 @@
           
 
 
-        <div id = "Nature" class = "SectorsDivs">
-          <div id = "title1"><h1 class = "titles">Nature</h1></div>
+        <div id = "Nature" class = "SectionsDivs">
+          <div id = "title1"><h1 class = "titles">Nature</h1></div> <!-- How to hover only the letters?-->
+          <details>
+            <summary>
+              <span>Photos made from different regions in Netherlands</span>
+            </summary>
+          </details>
 
           <div class = "NatureOne">
-            <div>    <img src = "images/IMG_3472.jpg" class = "natureIMGClass" id = 'img1' alt = "Photo of nature made on phone camera"/> </div>
-            <div>    <img src = "images/IMG_5166.jpg" class = "natureIMGClass" id = 'img2' alt = "Photo of nature made on phone camera"/> </div><!-- the classes are also wrote for each img so if you want to change the frame of each, not touching the description under each img than you can use class = "nature"-->
-            <div>    <img src = "images/IMG_5205.jpg" class = "natureIMGClass" id = 'img3' alt = "Photo of nature made on phone camera"/> </div>
+            <div class = "IMG">    <img src = "images/IMG_3472.jpg" class = "natureIMGClass" id = 'img1' alt = "Photo of nature made on phone camera"/> </div>
+            <div class = "IMG">    <img src = "images/IMG_5166.jpg" class = "natureIMGClass" id = 'img2' alt = "Photo of nature made on phone camera"/> </div><!-- the classes are also wrote for each img so if you want to change the frame of each, not touching the description under each img than you can use class = "nature"-->
+            <div class = "IMG">    <img src = "images/IMG_5205.jpg" class = "natureIMGClass" id = 'img3' alt = "Photo of nature made on phone camera"/> </div>
           </div>
          
           <div class = "NatureTwo">
-            <div>    <img src = "images/IMG_5621.jpg" class = "natureIMGClass" id ='img4' alt = "Photo of nature made on phone camera" /> </div>
-            <div>    <img src = "images/IMG_7373.jpg" class = "natureIMGClass" id ='img5' alt = "Photo of nature made on phone camera" /> </div>
-            <div>    <img src = "images/IMG_3280.JPG" class = "natureIMGClass" id ='img6' alt = "Photo of nature made on phone camera" /> </div>
+            <div class = "IMG">    <img src = "images/IMG_5621.jpg" class = "natureIMGClass" id ='img4' alt = "Photo of nature made on phone camera" /> </div>
+            <div class = "IMG">    <img src = "images/IMG_7373.jpg" class = "natureIMGClass" id ='img5' alt = "Photo of nature made on phone camera" /> </div>
+            <div class = "IMG">    <img src = "images/IMG_3280.JPG" class = "natureIMGClass" id ='img6' alt = "Photo of nature made on phone camera" /> </div>
           </div>
         </div>
         
@@ -96,20 +101,29 @@
           <div id = "title2"><h1 class = "titles" id = "ArtArchitectureID">Art & Architecture</h1></div>
 
           <div class = "theSecondSectionOne">
-            <div>    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
-            <div id = "img8div">    <img src = "images/IMG_7740.jpg" class = "pictures-from-the-second-section" id = "img8"/> </div>
-            <!-- <div>    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div> -->
+            <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
+            <div class = "IMG" id = "img8div">    <img src = "images/IMG_7740.jpg" class = "pictures-from-the-second-section" id = "img8"/> </div>
+            <!-- <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div> -->
           </div>
 
           <div class = "theSecondSectionTwo">
-            <div>    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
-            <div>    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
-            <div>    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
+            <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
+            <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
+            <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
           </div>
 
 
 
         </div>
+
+      <div class = "SectionsDivs">   
+
+        <div class = "popupIMG">
+          <span onclick="this.parentNode.parentNode.remove(); return false;">&times;</span>
+          <img src = "images/IMG_3472.jpg" alt = ""/>
+        </div>
+        
+      </div>
 
   </body>
 </html>
