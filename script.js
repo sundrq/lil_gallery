@@ -24,3 +24,19 @@ var count = 0;
   
   }
 
+
+document.querySelectorAll('.NatureOne .NatureTwo .theSecondSectionOne .theSecondSectionTwo img').forEach(IMG =>{
+  IMG.onclick = () =>{
+     document.querySelector('.popupIMG').style.display = 'block'; 
+     document.querySelector('.popupIMG img').src = IMG.getAttribute('src');
+
+  } 
+
+});
+
+  document.querySelector('.popupIMG span').onclick = () =>{
+  document.querySelector('.popupIMG').style.display = 'none';
+  }
+
+
+  
