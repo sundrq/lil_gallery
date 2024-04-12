@@ -293,6 +293,8 @@ body {
             -webkit-background-clip: text;
             display: inline-block;
 
+           
+
         }
 
         h1#ArtArchitectureID {
@@ -318,7 +320,7 @@ body {
             color: transparent;
 
             background-size: 300% 450%;
-            background-clip: text;
+            /* background-clip: text; */
             /* background-position: 100%; */
             -webkit-background-clip: text;
             display: inline-block;
@@ -338,6 +340,20 @@ body {
                     transition: 1s;
                     /* color: white; */
                 }
+
+     h1.titles:hover {
+        text-decoration: none;
+        user-select: none;
+    }
+
+    #title1 {
+        overflow: hidden;
+    }
+
+    div .title1 {
+        text-decoration: none;
+        user-select: none;
+    }
         
         /* <-------------- URLs (<a>) --------------> */
 
@@ -346,7 +362,7 @@ body {
             text-decoration: none;
         }
 
-            a:hover{
+            a .nav_bar_headings:hover{
                 text-decoration: underline;
             }
 
@@ -365,9 +381,10 @@ body {
         justify-content: space-between;
         top: 4%;
 
-        box-shadow: 0 0 30px 5px;
+        box-shadow:rgb(88, 88, 88) 0 0 15px -2px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        
 
         /* justify-content: flex-end; */
         /* display: flex; */
@@ -682,4 +699,46 @@ img {
 
 img:hover {
     opacity: 100%;
+}
+
+/* ---------------- Header / Navbar ---------------- */
+
+li, a {
+font-family: "Raleway", serif;
+font-weight: 600;
+color: white;
+cursor: pointer;
+font-style: normal;
+user-select: none;
+text-decoration: none;
+
+}
+
+li, a:hover {
+    text-decoration: none;
+}
+
+
+
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 30px;
+    align-items: center;
 }

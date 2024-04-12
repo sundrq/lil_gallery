@@ -18,8 +18,19 @@
       <script src = 'script.js'></script>
   </head>
   <body>
-      
 
+
+    <header>
+      <nav>
+        <ul class = "nav_links"> 
+          <li><a href = "#nature_link" class = "nav_bar_headings">Nature</a></li>
+        
+          <li><a href = "#a&a_link" class = "nav_bar_headings">Art & Architecture</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    
         <audio id = "audio_music">
             <source src = "music/perfect-beauty-191271.mp3" type = "audio/mpeg">
                 Your browser does not support the audio element.
@@ -67,7 +78,7 @@
 
       <div>
         <button id = "controlsPlayPauseBTN">&#9658</button>
-        <button id = "controlsStopBTN">&#10074</button>
+        <button id = "controlsStopBTN">&#9209</button>
 
       </div>
 
@@ -75,9 +86,10 @@
           
 
 
-        <div id = "Nature" class = "SectionsDivs">
+  <a name = "nature_link">
+          <div id = "Nature" class = "SectionsDivs">
           <div id = "title1"><h1 class = "titles">Nature</h1></div> <!-- How to hover only the letters?-->
-
+  </a>
           <!-- <details>
             <summary>Open description
             </summary>
@@ -99,9 +111,10 @@
           </div>
         </div>
         
-
+ <a name = "a&a_link">
         <div id = "TheSecondSection" class = "SectionsDivs">
           <div id = "title2"><h1 class = "titles" id = "ArtArchitectureID">Art & Architecture</h1></div>
+ </a>
 
           <div class = "theSecondSectionOne">
             <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
