@@ -6,7 +6,7 @@
 
 body {
     background-color:rgb(255, 166, 133) ;
-    font-family: "Raleway", serif;
+    font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300; /* from 100 to 900*/
     font-style: normal;
@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
 
     html {
         width: 100%;
@@ -101,7 +102,7 @@ body {
             background-image: linear-gradient(-3deg, rgb(0, 0, 0) 50%, white calc(50% + 1px));
             background-size: 300% 450%;
 
-            font-family: "Raleway", serif;
+            font-family: "Raleway", sans-serif;
             font-size: 35px;
             text-align: center;
             align-items: center;
@@ -148,7 +149,7 @@ body {
             background-image: linear-gradient(-3deg, white 50%, black calc(50% + 1px));
             background-size: 300% 450%;
 
-            font-family: "Raleway", serif;
+            font-family: "Raleway", sans-serif;
             font-size: 20px;
             text-align: center;
             align-items: center;
@@ -175,7 +176,7 @@ body {
         }
 
         .buttons2 {
-            padding-top: 50px;
+            padding: 30px 0px 40px;
             align-items: center;
             text-align: center;
         }
@@ -228,7 +229,7 @@ body {
 
         p {
             color: black;
-            font-family: "Raleway", serif;
+            font-family: "Raleway", sans-serif;
             font-optical-sizing: auto;
             font-weight: 600; /* from 100 to 900*/ 
             font-style: normal;
@@ -239,6 +240,7 @@ body {
             font-weight: 700;
             font-size: 40px;
             position: center;
+            padding-top: 5px;
             
 
         }
@@ -247,8 +249,8 @@ body {
             text-align: left;
             font-weight: 400;
             font-size: 25px;
-            padding: 10px;
-            padding-top: 50px;
+            padding: 50px 30px 0px;
+            /* padding-top: 50px; */
 
         }
 
@@ -256,8 +258,7 @@ body {
             text-align: left;
             font-weight: 400;
             font-size: 25px;
-            padding: 10px;
-            padding-top: 50px;
+            padding: 30px 30px 30px;
         }
 
 
@@ -271,7 +272,7 @@ body {
             justify-content: center;
             padding-top: 20px;
 
-            font-family: "Raleway", serif;
+            font-family: "Raleway", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700; /*from 100 to 900 */
             font-style: normal;
@@ -304,7 +305,7 @@ body {
             justify-content: center;
             padding-top: 20px;
 
-            font-family: "Raleway", serif;
+            font-family: "Raleway", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700; /*from 100 to 900 */
             font-style: normal;
@@ -320,9 +321,8 @@ body {
             color: transparent;
 
             background-size: 300% 450%;
-            /* background-clip: text; */
+            background-clip: text;
             /* background-position: 100%; */
-            -webkit-background-clip: text;
             display: inline-block;
 
         }
@@ -366,7 +366,7 @@ body {
                 text-decoration: underline;
             }
 
-/* -------------- Hover Music Controls Popup Section --------------- */
+/* -------------- Hover Music Controls Popup Section (right) --------------- */
 
 
     #musicControlsPopup {
@@ -458,8 +458,9 @@ body {
     .natureIMGClass {
         transition: 1s; /* Time of the effect */
 
-        width: 546.91px;
-        padding: 50px;
+        width: calc(546.91px - 100px);
+        padding: 0;
+        /* margin: 50px; */
 
         filter: blur(6px);
 
@@ -484,7 +485,7 @@ body {
         justify-content: space-evenly; /* this will add equal space between each image */
         align-items: center;
 
-        padding: 0px 50px 50px; /* UNDER THE QUESTION */
+        padding: 0px 0px 50px; /* UNDER THE QUESTION */
 
     }
 
@@ -528,7 +529,7 @@ body {
     }
 
     #img8 {
-        width: 848px;
+        /* width: 848px; */
     }
 
     .theSecondSectionTwo {
@@ -663,6 +664,15 @@ details {
 }
 
 /*------------- IMG settings ---------------> */
+
+.IMG {
+    width: calc((100% / 3) - 3%);
+
+}
+.IMG img {
+    width: 100%;
+}
+
 /* img {
     position: relative;
 }
@@ -690,21 +700,23 @@ img::before{
 
 img {
    object-fit: cover;
-   /* opacity: 0.4; */
 
     background-color: rgb(255, 255, 255);
     opacity: 0.4;
     background-clip: content-box;
+    box-shadow: 0;
 }
 
 img:hover {
     opacity: 100%;
+    cursor: pointer;
+    box-shadow:rgb(88, 88, 88) 0 0 15px -2px;
 }
 
 /* ---------------- Header / Navbar ---------------- */
 
 li, a {
-font-family: "Raleway", serif;
+font-family: "Raleway", sans-serif;
 font-weight: 600;
 color: white;
 cursor: pointer;
@@ -733,11 +745,11 @@ header {
     text-align: center;
 }
 
-.nav_links {
+nav #nav_links {
     list-style: none;
 }
 
-.nav_links li{
+#nav_links li{
     display: inline-block;
     padding: 0px 30px;
     align-items: center;

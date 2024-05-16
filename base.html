@@ -22,12 +22,17 @@
 
     <header>
       <nav>
-        <ul class = "nav_links"> 
+        
+        <ul id = "nav_links"> 
           <li><a href = "#nature_link" class = "nav_bar_headings">Nature</a></li>
         
           <li><a href = "#a&a_link" class = "nav_bar_headings">Art & Architecture</a></li>
         </ul>
       </nav>
+
+      <div class = "nav_wrapper">
+       
+      </div>
     </header>
 
     
@@ -41,10 +46,10 @@
 
         <div class = "popup_body">
 
-        <button id = "close" onclick="this.parentNode.parentNode.remove(); return false;">&times;</button>
+        <button id = "close" onclick="this.parentNode.parentNode.remove(); return false;">&#x2715;</button>
 
           <p id = "welcome_text">Welcome!</p>
-          <p id = "greeting_text">My name is Sandra! I want to present you my little gallery with my photos made on phone camera.</p>
+          <p id = "greeting_text">My name is Sandra. I want to present you my little gallery with my photos made on phone camera.</p>
         <div id = "div_bottom_buttons">     
           <p id = "music_yesno">And this page has relaxing music, do you want to turn it on?</p>
           <div class = 'buttons'>
@@ -86,10 +91,10 @@
           
 
 
-  <a name = "nature_link">
+  <a name = "nature_link"></a>
           <div id = "Nature" class = "SectionsDivs">
           <div id = "title1"><h1 class = "titles">Nature</h1></div> <!-- How to hover only the letters?-->
-  </a>
+  
           <!-- <details>
             <summary>Open description
             </summary>
@@ -111,10 +116,9 @@
           </div>
         </div>
         
- <a name = "a&a_link">
+ <a name = "a&a_link"></a>
         <div id = "TheSecondSection" class = "SectionsDivs">
           <div id = "title2"><h1 class = "titles" id = "ArtArchitectureID">Art & Architecture</h1></div>
- </a>
 
           <div class = "theSecondSectionOne">
             <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
