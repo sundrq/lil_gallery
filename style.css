@@ -485,8 +485,8 @@ body {
         justify-content: space-evenly; /* this will add equal space between each image */
         align-items: center;
 
-        padding: 0px 0px 50px; /* UNDER THE QUESTION */
-
+        padding: 50px 0px 50px; /* UNDER THE QUESTION */
+        /* Padding of the pictures' div. So that they don't have paddings */
     }
 
     .NatureTwo {
@@ -495,8 +495,8 @@ body {
         justify-content: space-evenly; /* this will add equal space between each image */
         align-items: center;
 
-        padding: 0 50px 200px;
-
+        padding: 0px 0px 200px; 
+        /* Padding of the pictures' div. So that they don't have paddings */
     }
 
 
@@ -666,7 +666,7 @@ details {
 /*------------- IMG settings ---------------> */
 
 .IMG {
-    width: calc((100% / 3) - 3%);
+    width: calc((100% / 3) - 6%);
 
 }
 .IMG img {
