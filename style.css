@@ -445,6 +445,7 @@ body {
 #Nature {
     width: 100%;
     background-size: cover;
+
     background-position: center center;
     z-index:10;
     justify-content: center;
@@ -521,31 +522,32 @@ body {
     .theSecondSectionOne {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-evenly; /* this will add equal space between each image */
         align-items: center;
 
-        padding: 150px 50px 50px;
-
+        padding: 50px 0px 50px;
     }
 
     #img8 {
-        /* width: 848px; */
+        width: calc(848px - 100px); /* ??? */
     }
 
     .theSecondSectionTwo {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-evenly; /* this will add equal space between each image */
         align-items: center;
-        padding: 0 50px 50px;
+
+        padding: 50px 0px 50px;
     
     }
 
     .pictures-from-the-second-section {
-        transition: 1s;
+        transition: 1s; /* Time of the effect */
 
-        width: 546.91px;
-        padding: 50px;
+        width: calc(546.91px - 100px);
+        padding: 0;
+        /* margin: 50px; */
 
         filter: blur(6px);
 
