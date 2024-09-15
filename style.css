@@ -1,44 +1,42 @@
-*{ 
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color:rgb(255, 166, 133) ;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300; /* from 100 to 900*/
-    font-style: normal;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-color: rgb(255, 166, 133);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300; /* from 100 to 900*/
+  font-style: normal;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
-    html {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        background-position: fixed; /* Under the question */
-    }
+html {
+  /* width: 100%;  ??????????????????????// */
+  padding: 0;
+  margin: 0;
+  background-position: fixed; /* Under the question */
+}
 
 /* <---------------- Popup & Buttons ----------------> */
 
-    #popup {
-        background-color: rgb(0, 0, 0);
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 15;
-        align-items: center;
+#popup {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  align-items: center;
+}
 
-    }
-
-    /* .popup transitionIn {
+/* .popup transitionIn {
         transition: 2s;
         
         from {
@@ -59,377 +57,360 @@ body {
         
     } */
 
-    #popup:hover {
-        background-color: rgb(0, 0, 0, 0.7);
-        transition: 2s;
-        transition-timing-function: linear;
-        z-index: 16;
-    }
+#popup:hover {
+  background-color: rgb(0, 0, 0, 0.7);
+  transition: 2s;
+  transition-timing-function: linear;
+  z-index: 16;
+}
 
-    .popup_body {
-        background-color: white;
-        color: black;
-        border-radius: 5px;
-        box-shadow: 0 0 100px 1px black;
+.popup_body {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 100px 1px black;
 
-        width: 500px;
-        height: 650px;
-        position: fixed;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        top: 50%;
-        display: block;
-        justify-content: center;
-        padding: 1px 1px;
+  width: 500px;
+  height: 650px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  display: block;
+  justify-content: center;
+  padding: 1px 1px;
 
+  z-index: 15;
+}
 
-        z-index: 15;
-    }
+#close {
+  display: block;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  outline: none;
+  border-radius: 5px;
 
-        #close {
-            display: block;
-            cursor: pointer;
-            width: 80px;
-            height: 40px;
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            outline: none;
-            border-radius: 5px; 
+  /* background-color: black; */
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(
+    -3deg,
+    rgb(0, 0, 0) 50%,
+    white calc(50% + 1px)
+  );
+  background-size: 300% 450%;
 
-            /* background-color: black; */
-            color: rgb(0, 0, 0);
-            background-image: linear-gradient(-3deg, rgb(0, 0, 0) 50%, white calc(50% + 1px));
-            background-size: 300% 450%;
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  align-content: center;
+  padding: 0;
+  border: 3px black solid;
 
-            font-family: "Raleway", sans-serif;
-            font-size: 35px;
-            text-align: center;
-            align-items: center;
-            text-decoration: none;
-            align-content: center;
-            padding: 0; 
-            border: 3px black solid;
+  transition: 2s;
+}
 
-            transition: 2s;
-        }
+#close:hover {
+  color: rgb(255, 255, 255);
+  transition: 1s;
+  background-position: 0% 100%;
+  /* border: 3px solid rgb(255, 130, 130); */
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 3px black solid;
+}
 
-            #close:hover {
-                color: rgb(255, 255, 255);
-                transition: 1s;
-                background-position: 0% 100%;
-                /* border: 3px solid rgb(255, 130, 130); */
-                text-align: center;
-                align-items: center;
-                border-radius: 5px;
-                border: 3px black solid;
-            }
+.buttons {
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.button_class {
+  margin: 10px;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  /* position: center; */
+  outline: none;
+  border-radius: 5px;
+  display: inline-block;
 
-        .buttons {
-            /* justify-content: center; */
-            align-items: center;
-            text-align: center;
-            display: flex;
-            justify-content: space-evenly;
-        }
+  color: white;
+  background-image: linear-gradient(-3deg, white 50%, black calc(50% + 1px));
+  background-size: 300% 450%;
 
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  /* align-content: center; */
+  padding: 0;
+  border: 3px black solid;
 
-        .button_class {
-            margin: 10px;
-            cursor: pointer;
-            width: 80px;
-            height: 40px;
-            /* position: center; */
-            outline: none;
-            border-radius: 5px;
-            display: inline-block;
+  transition: 2s;
+}
 
-            color: white;
-            background-image: linear-gradient(-3deg, white 50%, black calc(50% + 1px));
-            background-size: 300% 450%;
+#yes_button:hover,
+#no_button:hover {
+  color: black;
+  transition: 1s;
+  background-position: 0% 100%;
+  /* border: 3px solid rgb(255, 130, 130); */
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 3px black solid;
+}
 
-            font-family: "Raleway", sans-serif;
-            font-size: 20px;
-            text-align: center;
-            align-items: center;
-            text-decoration: none;
-            /* align-content: center; */
-            padding: 0; 
-            border: 3px black solid;
+.buttons2 {
+  padding: 30px 0px 40px;
+  align-items: center;
+  text-align: center;
+}
 
-            transition: 2s;
+#confirm_button {
+  margin: 10px;
+  cursor: pointer;
+  width: 160px;
+  height: 80px;
+  /* position: center; */
+  outline: none;
+  border-radius: 5px;
+  display: inline-block;
 
-        }
+  color: black;
+  background-image: linear-gradient(-3deg, black 50%, white calc(50% + 1px));
+  background-size: 300% 450%;
 
-        #yes_button:hover,
-        #no_button:hover {
-            
-                color: black;
-                transition: 1s;
-                background-position: 0% 100%;
-                /* border: 3px solid rgb(255, 130, 130); */
-                text-align: center;
-                align-items: center;
-                border-radius: 5px;
-                border: 3px black solid;
-        }
+  font-family: "Raleway" serif;
+  font-size: 35px;
+  text-decoration: none;
 
-        .buttons2 {
-            padding: 30px 0px 40px;
-            align-items: center;
-            text-align: center;
-        }
+  align-items: center;
+  text-align: center;
+  padding: 0;
 
-        #confirm_button {
+  border: 3px black solid;
+  border-radius: 5px;
 
-            margin: 10px;
-            cursor: pointer;
-            width: 160px;
-            height: 80px;
-            /* position: center; */
-            outline: none;
-            border-radius: 5px;
-            display: inline-block;
+  transition: 2s;
+}
 
-            color: black;
-            background-image: linear-gradient(-3deg, black 50%, white calc(50% + 1px));
-            background-size: 300% 450%;
+#confirm_button:hover {
+  color: white;
+  transition: 1s;
+  background-position: 0% 100%;
+  /* border: 3px solid rgb(255, 130, 130); */
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 3px black solid;
+}
 
-            font-family: "Raleway" serif;
-            font-size: 35px;
-            text-decoration: none;
-            
-            align-items: center;
-            text-align: center;
-            padding: 0;
+#div_bottom_buttons {
+  padding-top: 100px;
+}
+/* <-------------- Paragraphs (<p>) --------------> */
 
-            border: 3px black solid;
-            border-radius: 5px;
+p {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600; /* from 100 to 900*/
+  font-style: normal;
+}
 
-            transition: 2s;
-        }
+p#welcome_text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  position: center;
+  padding-top: 5px;
+}
 
-            #confirm_button:hover {
-                color: white;
-                transition: 1s;
-                background-position: 0% 100%;
-                /* border: 3px solid rgb(255, 130, 130); */
-                text-align: center;
-                align-items: center;
-                border-radius: 5px;
-                border: 3px black solid;
+p#greeting_text {
+  text-align: left;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 50px 30px 0px;
+  /* padding-top: 50px; */
+}
 
-            }
+p#music_yesno {
+  text-align: left;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 30px 30px 30px;
+}
 
-        #div_bottom_buttons {
-           padding-top: 100px;
-        }
-        /* <-------------- Paragraphs (<p>) --------------> */
+/* <-------------- Headings (<h#>) --------------> */
 
-        p {
-            color: black;
-            font-family: "Raleway", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 600; /* from 100 to 900*/ 
-            font-style: normal;
-        }
+h1 {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
 
-        p#welcome_text {
-            text-align: center;
-            font-weight: 700;
-            font-size: 40px;
-            position: center;
-            padding-top: 5px;
-            
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /*from 100 to 900 */
+  font-style: normal;
+  font-size: 80px;
+  /* font-size: 600px; */
+  /* width: 100%; */
 
-        }
+  -webkit-user-select: none;
+  user-select: none;
 
-        p#greeting_text {
-            text-align: left;
-            font-weight: 400;
-            font-size: 25px;
-            padding: 50px 30px 0px;
-            /* padding-top: 50px; */
+  color: black;
+  background: linear-gradient(-3deg, white 50%, black calc(50% + 1px));
+  transition: 2s;
+  color: transparent;
 
-        }
+  background-size: 300% 450%;
+  background-clip: text;
+  /* background-position: 100%; */
+  -webkit-background-clip: text;
+  display: inline-block;
+}
 
-        p#music_yesno {
-            text-align: left;
-            font-weight: 400;
-            font-size: 25px;
-            padding: 30px 30px 30px;
-        }
+h1#ArtArchitectureID {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
 
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /*from 100 to 900 */
+  font-style: normal;
+  font-size: 80px;
+  /* width: 100%; */
 
+  -webkit-user-select: none;
+  user-select: none;
 
-        /* <-------------- Headings (<h#>) --------------> */
-        
-        h1 {
-            margin: auto;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            padding-top: 20px;
+  color: rgb(255, 166, 133);
+  background: linear-gradient(
+    -3deg,
+    white 50%,
+    rgb(255, 166, 133) calc(50% + 1px)
+  );
+  transition: 2s;
+  color: transparent;
 
-            font-family: "Raleway", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 700; /*from 100 to 900 */
-            font-style: normal;
-            font-size: 80px;
-            /* font-size: 600px; */
-            width: 100%;
+  background-size: 300% 450%;
+  background-clip: text;
+  /* background-position: 100%; */
+  display: inline-block;
+}
 
-            -webkit-user-select: none;
-            user-select: none;
+h1:hover {
+  background-position: 0% 100%;
+  transition: 1s;
+  /* color: white; */
+}
 
-            color: black;
-            background: linear-gradient(-3deg, white 50%, black calc(50% + 1px));
-            transition: 2s;
-            color: transparent;
+h1#ArtArchitectureID:hover {
+  background-position: 0% 100%;
+  transition: 1s;
+  /* color: white; */
+}
 
-            background-size: 300% 450%;
-            background-clip: text;
-            /* background-position: 100%; */
-            -webkit-background-clip: text;
-            display: inline-block;
+h1.titles:hover {
+  text-decoration: none;
+  user-select: none;
+}
 
-           
+.title1 {
+  overflow: hidden;
+  text-align: center;
+}
 
-        }
-
-        h1#ArtArchitectureID {
-            margin: auto;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            padding-top: 20px;
-
-            font-family: "Raleway", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 700; /*from 100 to 900 */
-            font-style: normal;
-            font-size: 80px;
-            width: 100%;
-
-            -webkit-user-select: none;
-            user-select: none;
-
-            color: rgb(255, 166, 133);
-            background: linear-gradient(-3deg, white 50%, rgb(255, 166, 133) calc(50% + 1px));
-            transition: 2s;
-            color: transparent;
-
-            background-size: 300% 450%;
-            background-clip: text;
-            /* background-position: 100%; */
-            display: inline-block;
-
-        }
-
-
-
-            h1:hover {
-                background-position: 0% 100%;
-                transition: 1s;
-                /* color: white; */
-            }
-
-                h1#ArtArchitectureID:hover {
-                    background-position: 0% 100%;
-                    transition: 1s;
-                    /* color: white; */
-                }
-
-     h1.titles:hover {
+/* div .title1 {
         text-decoration: none;
         user-select: none;
-    }
+    } */
 
-    #title1 {
-        overflow: hidden;
-    }
+/* <-------------- URLs (<a>) --------------> */
 
-    div .title1 {
-        text-decoration: none;
-        user-select: none;
-    }
-        
-        /* <-------------- URLs (<a>) --------------> */
+a {
+  text-decoration: none;
+}
 
-        
-        a {
-            text-decoration: none;
-        }
-
-            a .nav_bar_headings:hover{
-                text-decoration: underline;
-            }
+a .nav_bar_headings:hover {
+  text-decoration: underline;
+}
 
 /* -------------- Hover Music Controls Popup Section (right) --------------- */
 
+#musicControlsPopup {
+  width: 50px;
+  height: 100px;
 
-    #musicControlsPopup {
-        width: 50px;
-        height: 100px;
+  background-color: rgb(0, 0, 0);
 
-        background-color: rgb(0, 0, 0);
+  color: white;
 
-        color: white; 
+  position: fixed;
+  justify-content: space-between;
+  top: 4%;
 
-        position: fixed;
-        justify-content: space-between;
-        top: 4%;
+  box-shadow: rgb(88, 88, 88) 0 0 15px -2px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 
-        box-shadow:rgb(88, 88, 88) 0 0 15px -2px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        
+  /* justify-content: flex-end; */
+  /* display: flex; */
+  /* align-items: right; */
+  /* text-align: right; */
+  z-index: 13;
+  right: 0;
 
-        /* justify-content: flex-end; */
-        /* display: flex; */
-        /* align-items: right; */
-        /* text-align: right; */
-        z-index: 13;
-        right: 0;
+  transition: 1s;
 
-        transition: 1s;
+  user-select: none;
+  text-decoration: none;
+}
 
-        user-select: none;
-        text-decoration: none;
-    }
+#musicControlsPopup:hover {
+  background-color: white;
 
-    #musicControlsPopup:hover {
-        background-color: white;
+  color: black;
 
-        color: black;
+  width: 200px;
+  height: 100px;
+  transition: 1s;
 
-        width: 200px;
-        height: 100px;
-        transition: 1s;
-        
-        #musicControlsPopup_p_id { 
-            color:black;
-            transition: 1s;
-        }
-        
-    }
+  #musicControlsPopup_p_id {
+    color: black;
+    transition: 1s;
+  }
+}
 
-    #musicControlsPopup_p_id {
-        text-align: left;
-        position: relative;
-        color: white;
-        font-size: 40px;
-        transition: 1s;
-    }
-
-
-    
+#musicControlsPopup_p_id {
+  text-align: left;
+  position: relative;
+  color: white;
+  font-size: 40px;
+  transition: 1s;
+}
 
 /* <------------- Example of the opacity settings --------------> */
 
-
-        /* .<>
+/* .<>
 {
         opacity:0.5;
 }                     
@@ -438,161 +419,149 @@ body {
         opacity:1;
 } */
 
-
 /* <-------------- Nature Section Settings ---------------> */
 
-
 #Nature {
-    width: 100%;
-    background-size: cover;
+  width: 100%;
+  background-size: cover;
 
-    background-position: center center;
-    z-index:10;
-    justify-content: center;
-    align-items: center;
+  background-position: center center;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
 
-    flex-wrap: wrap; /* UNDER THE QUESTION */
-
+  flex-wrap: wrap; /* UNDER THE QUESTION */
 }
 
+.natureIMGClass {
+  transition: 1s; /* Time of the effect */
 
-    .natureIMGClass {
-        transition: 1s; /* Time of the effect */
+  width: calc(546.91px - 100px);
+  padding: 0;
+  /* margin: 50px; */
 
-        width: calc(546.91px - 100px);
-        padding: 0;
-        /* margin: 50px; */
+  filter: blur(6px);
 
-        filter: blur(6px);
+  transition-timing-function: ease;
+}
 
-        transition-timing-function: ease;
+.natureIMGClass:hover {
+  transform: scale(1.1); /* Increasing the scale */
+  filter: blur(0px);
+  transition: 1s;
 
-    }
+  transition-timing-function: ease-out;
+}
 
-        .natureIMGClass:hover {
-            transform: scale(1.1); /* Increasing the scale */
-            filter: blur(0px);
-            transition: 1s;
+.NatureOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /* this will add equal space between each image */
+  align-items: center;
 
-            transition-timing-function: ease-out;
-        }   
+  padding: 50px 0px 50px; /* UNDER THE QUESTION */
+  /* Padding of the pictures' div. So that they don't have paddings */
+}
 
+.NatureTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /* this will add equal space between each image */
+  align-items: center;
 
-
-
-    .NatureOne {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly; /* this will add equal space between each image */
-        align-items: center;
-
-        padding: 50px 0px 50px; /* UNDER THE QUESTION */
-        /* Padding of the pictures' div. So that they don't have paddings */
-    }
-
-    .NatureTwo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly; /* this will add equal space between each image */
-        align-items: center;
-
-        padding: 0px 0px 200px; 
-        /* Padding of the pictures' div. So that they don't have paddings */
-    }
-
+  padding: 0px 0px 200px;
+  /* Padding of the pictures' div. So that they don't have paddings */
+}
 
 /* <------------- Future Second Section's Settings --------------> */
 
-
 #TheSecondSection {
-    width: 100%;
-    background-size: cover;
+  width: 100%;
+  background-size: cover;
 
-        background-color: black;
+  background-color: black;
 
-    background-position: center center;
-    z-index:9;
-    justify-content: center;
-    align-items: center;
+  background-position: center center;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
 
-    flex-wrap: wrap; /* UNDER THE QUESTION */ 
-
+  flex-wrap: wrap; /* UNDER THE QUESTION */
 }
 
-    .theSecondSectionOne {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly; /* this will add equal space between each image */
-        align-items: center;
+.theSecondSectionOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /* this will add equal space between each image */
+  align-items: center;
 
-        padding: 50px 0px 50px;
-    }
-
+  /* padding: 50px 0px 50px; */
+}
+/* 
     #img8 {
-        width: calc(848px - 100px); /* ??? */
-    }
+        width: calc(848px - 100px); 
+    } */
 
-    .theSecondSectionTwo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly; /* this will add equal space between each image */
-        align-items: center;
+/* #img7 #img8 {
+    width: calc((100% / 2) - 6%);
 
-        padding: 50px 0px 50px;
     
-    }
+    } */
+.theSecondSectionTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /* this will add equal space between each image */
+  align-items: center;
 
-    .pictures-from-the-second-section {
-        transition: 1s; /* Time of the effect */
+  padding: 50px 0px 50px;
+}
 
-        width: calc(546.91px - 100px);
-        padding: 0;
-        /* margin: 50px; */
+.pictures-from-the-second-section {
+  transition: 1s; /* Time of the effect */
 
-        filter: blur(6px);
+  width: calc(546.91px - 100px);
+  padding: 0;
+  /* margin: 50px; */
 
-        transition-timing-function: ease;
-        
-    }
-    
-        .pictures-from-the-second-section:hover {
-            transform: scale(1.1);
-            filter: blur(0px);
-            transition: 1s;
+  filter: blur(6px);
 
-            transition-timing-function: ease-out;
-        }
+  transition-timing-function: ease;
+}
 
+.pictures-from-the-second-section:hover {
+  transform: scale(1.1);
+  filter: blur(0px);
+  transition: 1s;
 
-/*-------------- Slanted/Skewed Div (2 SECTION) -------------- */ 
+  transition-timing-function: ease-out;
+}
 
+/*-------------- Slanted/Skewed Div (2 SECTION) -------------- */
 
 .SectionsDivs {
-    width: 100%;
-    position: relative; 
-
+  width: 100%;
+  position: relative;
 }
 
 .SectionsDivs:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    z-index: -1;
-    bottom: 0;
-    content: '';
-
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  content: "";
 }
 
-/*#Nature:after,*/ #TheSecondSection:after {
-    width: 100%;
-    transform-origin: left top;
-    transform: skewY(-3deg);
-    border-top: solid;
-    border-width: 80px;
-    /* margin-top: 50px; */
-    border-color: rgb(101, 37, 14);
-
+/*#Nature:after,*/
+#TheSecondSection:after {
+  width: 100%;
+  transform-origin: left top;
+  transform: skewY(-3deg);
+  border-top: solid;
+  border-width: 80px;
+  /* margin-top: 50px; */
+  border-color: rgb(101, 37, 14);
 }
 
 /* .SectionsDivs .NatureOne .NatureTwo .theSecondSectionOne .theSecondSectionTwo .IMG {
@@ -602,26 +571,24 @@ body {
 } */
 
 .popupIMG {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgb(0, 0, 0, 0.9);
-    height: 100%;
-    width: 100%;
-    z-index: 14;
-    display: none;
-    
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 14;
+  display: none;
 }
 
 .popupIMG img {
-    width: 35%;
-    /* height: auto; */
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    /* object-fit: scale-down; */
-    background-size: cover;
-    
+  width: 35%;
+  /* height: auto; */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* object-fit: scale-down; */
+  background-size: cover;
 }
 
 /* .popupIMG img {
@@ -631,13 +598,13 @@ body {
 
 } */
 .SectionsDivs .popupIMG span {
-    position: absolute;
-    top: 10px; right: 30px;
-    font-size: 50px;
-    font-weight: bolder;
-    color: white;
-    cursor: pointer;
-
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
 }
 /* 
 summary details{
@@ -660,19 +627,23 @@ details {
 } */
 
 @media (max-width: 848px) {
-.SectionsDivs .popupIMG img {
+  .SectionsDivs .popupIMG img {
     width: 95%;
-}
+  }
 }
 
 /*------------- IMG settings ---------------> */
 
 .IMG {
-    width: calc((100% / 3) - 6%);
-
+  width: calc((100% / 3) - 6%);
 }
+
+#img8 {
+  width: calc(848px - 100px);
+}
+
 .IMG img {
-    width: 100%;
+  width: 100%;
 }
 
 /* img {
@@ -701,38 +672,37 @@ img::before{
 } */
 
 img {
-   object-fit: cover;
+  object-fit: cover;
 
-    background-color: rgb(255, 255, 255);
-    opacity: 0.4;
-    background-clip: content-box;
-    box-shadow: 0;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.4;
+  background-clip: content-box;
+  box-shadow: 0;
 }
 
 img:hover {
-    opacity: 100%;
-    cursor: pointer;
-    box-shadow:rgb(88, 88, 88) 0 0 15px -2px;
+  opacity: 100%;
+  cursor: pointer;
+  box-shadow: rgb(88, 88, 88) 0 0 15px -2px;
 }
 
 /* ---------------- Header / Navbar ---------------- */
 
-li, a {
-font-family: "Raleway", sans-serif;
-font-weight: 600;
-color: white;
-cursor: pointer;
-font-style: normal;
-user-select: none;
-text-decoration: none;
-
+li,
+a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  font-style: normal;
+  user-select: none;
+  text-decoration: none;
 }
 
-li, a:hover {
-    text-decoration: none;
+li,
+a:hover {
+  text-decoration: none;
 }
-
-
 
 /* header {
     display: flex;
@@ -741,18 +711,31 @@ li, a:hover {
 } */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 nav #nav_links {
-    list-style: none;
+  list-style: none;
 }
 
-#nav_links li{
-    display: inline-block;
-    padding: 0px 30px;
-    align-items: center;
+#nav_links li {
+  display: inline-block;
+  padding: 0px 30px;
+  align-items: center;
+}
+
+/* --------------- Cursor ------------------*/
+
+.cursos {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
 }

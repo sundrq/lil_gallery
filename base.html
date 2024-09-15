@@ -1,149 +1,243 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset = "utf-8"/>
-      <meta name = "keywords" content = "gallery, photo, photos, nature, art, project, html, css, sundrq, github">
-      <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-      <meta name = "google" content = "notranslate">
-      <meta name = "description" content="A little gallery of photos taken on the camera phone by Sandra (github.com/sundrq)">
-      
-      <title>My Lil Photo Gallery</title>
-      <link rel = "stylesheet" type = "text/css" href = "style.css">
-      <!-- <link rel = "script" type ""> -->
-          <div id = "fontsLinks">
-              <link rel="preconnect" href="https://fonts.googleapis.com"/>
-              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-              <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-          </div>
-      <script src = 'script.js'></script>
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="gallery, photo, photos, nature, art, project, html, css, sundrq, github"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <meta
+      name="description"
+      content="A little gallery of photos taken on the camera phone by Sandra (github.com/sundrq)"
+    />
+
+    <title>My Lil Photo Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel = "script" type ""> -->
+    <div id="fontsLinks">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+    </div>
+    <script src="script.js"></script>
   </head>
   <body>
-
-
     <header>
       <nav>
-        
-        <ul id = "nav_links"> 
-          <li><a href = "#nature_link" class = "nav_bar_headings">Nature</a></li>
-        
-          <li><a href = "#a&a_link" class = "nav_bar_headings">Art & Architecture</a></li>
+        <ul id="nav_links">
+          <li><a href="#nature_link" class="nav_bar_headings">Nature</a></li>
+
+          <li>
+            <a href="#a&a_link" class="nav_bar_headings">Art & Architecture</a>
+          </li>
         </ul>
       </nav>
 
-      <div class = "nav_wrapper">
-       
-      </div>
+      <div class="nav_wrapper"></div>
     </header>
 
-    
-        <audio id = "audio_music">
-            <source src = "music/perfect-beauty-191271.mp3" type = "audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+    <audio id="audio_music">
+      <source src="music/perfect-beauty-191271.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
 
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
 
-      <div class = 'popup_link' id = "popup">
+    <div id="popup">
+      <div class="popup_body">
+        <button
+          id="close"
+          onclick="this.parentNode.parentNode.remove(); return false;"
+        >
+          &#x2715;
+        </button>
 
-        <div class = "popup_body">
-
-        <button id = "close" onclick="this.parentNode.parentNode.remove(); return false;">&#x2715;</button>
-
-          <p id = "welcome_text">Welcome!</p>
-          <p id = "greeting_text">My name is Sandra. I want to present you my little gallery with my photos made on phone camera.</p>
-        <div id = "div_bottom_buttons">     
-          <p id = "music_yesno">And this page has relaxing music, do you want to turn it on?</p>
-          <div class = 'buttons'>
-            <button class = "button_class" id = "yes_button" onclick = "play()" type = "button">Yes&#9658</button>
-            <button class = "button_class" id = "no_button" onclick = "stop()" type = "button">No&#9209</button>
+        <p id="welcome_text">Welcome!</p>
+        <p id="greeting_text">
+          My name is Sandra. I want to present you my little gallery with my
+          photos made on phone camera.
+        </p>
+        <div id="div_bottom_buttons">
+          <p id="music_yesno">
+            And this page has relaxing music, do you want to turn it on?
+          </p>
+          <div class="buttons">
+            <button class="button_class" id="yes_button" type="button">
+              Yes&#9658;
+            </button>
+            <button class="button_class" id="no_button" type="button">
+              No&#9209;
+            </button>
           </div>
 
-        <div class = 'buttons2'>
-          <button id = "confirm_button" onclick="popup.remove(); return false;">Confirm!</button>
+          <div class="buttons2">
+            <button id="confirm_button" onclick="popup.remove(); return false;">
+              Confirm!
+            </button>
+          </div>
         </div>
-
-        </div>
-
-        </div>
-
       </div>
+    </div>
 
+    <div id="scriptLanguage">
+      <script language="JavaScript"></script>
+    </div>
 
-        <div id = "scriptLanguage">
-            <script language = "JavaScript"></script>
-        </div>
-
-
-
-    <div id = "musicControlsPopup">
-
-      <div id = "musicSymbol">
-        <span id = "musicControlsPopup_p_id">♫
-          <!-- &#127926   -->  </span> 
+    <div id="musicControlsPopup">
+      <div id="musicSymbol">
+        <span id="musicControlsPopup_p_id"
+          >♫
+          <!-- &#127926   -->
+        </span>
       </div>
 
       <div>
-        <button id = "controlsPlayPauseBTN">&#9658</button>
-        <button id = "controlsStopBTN">&#9209</button>
-
+        <button id="controlsPlayPauseBTN">&#9658;</button>
+        <button id="controlsStopBTN">&#9209;</button>
       </div>
-
     </div>
-          
 
+    <a name="nature_link"></a>
+    <div id="Nature" class="SectionsDivs">
+      <div class="title1"><h1 class="titles">Nature</h1></div>
+      <!-- How to hover only the letters?-->
 
-  <a name = "nature_link"></a>
-          <div id = "Nature" class = "SectionsDivs">
-          <div id = "title1"><h1 class = "titles">Nature</h1></div> <!-- How to hover only the letters?-->
-  
-          <!-- <details>
+      <!-- <details>
             <summary>Open description
             </summary>
               <div class = "detailsContent">
                 <span>Photos made from different regions in Netherlands</span> 
             </div>
-          </details> -->                                                                 <!-- Make is later -->
+          </details> -->
+      <!-- Make is later -->
 
-          <div class = "NatureOne">
-            <div class = "IMG">    <img src = "images/IMG_3472.jpg" class = "natureIMGClass" id = 'img1' alt = "Photo of nature made on phone camera"/> </div>
-            <div class = "IMG">    <img src = "images/IMG_5166.jpg" class = "natureIMGClass" id = 'img2' alt = "Photo of nature made on phone camera"/> </div><!-- the classes are also wrote for each img so if you want to change the frame of each, not touching the description under each img than you can use class = "nature"-->
-            <div class = "IMG">    <img src = "images/IMG_5205.jpg" class = "natureIMGClass" id = 'img3' alt = "Photo of nature made on phone camera"/> </div>
-          </div>
-         
-          <div class = "NatureTwo">
-            <div class = "IMG">    <img src = "images/IMG_5621.jpg" class = "natureIMGClass" id ='img4' alt = "Photo of nature made on phone camera" /> </div>
-            <div class = "IMG">    <img src = "images/IMG_7373.jpg" class = "natureIMGClass" id ='img5' alt = "Photo of nature made on phone camera" /> </div>
-            <div class = "IMG">    <img src = "images/IMG_3280.JPG" class = "natureIMGClass" id ='img6' alt = "Photo of nature made on phone camera" /> </div>
-          </div>
+      <div class="NatureOne">
+        <div class="IMG">
+          <img
+            src="images/IMG_3472.jpg"
+            class="natureIMGClass"
+            id="img1"
+            alt="Photo of nature made on phone camera"
+          />
         </div>
-        
- <a name = "a&a_link"></a>
-        <div id = "TheSecondSection" class = "SectionsDivs">
-          <div id = "title2"><h1 class = "titles" id = "ArtArchitectureID">Art & Architecture</h1></div>
-
-          <div class = "theSecondSectionOne">
-            <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
-            <div class = "IMG" id = "img8div">    <img src = "images/IMG_7740.jpg" class = "pictures-from-the-second-section" id = "img8"/> </div>
-            <!-- <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div> -->
-          </div>
-
-          <div class = "theSecondSectionTwo">
-            <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
-            <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
-            <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div>
-          </div>
-
-
-
+        <div class="IMG">
+          <img
+            src="images/IMG_5166.jpg"
+            class="natureIMGClass"
+            id="img2"
+            alt="Photo of nature made on phone camera"
+          />
         </div>
-
-      <div class = "SectionsDivs">   
-
-        <div class = "popupIMG">
-          <span onclick="this.parentNode.parentNode.remove(); return false;">&times;</span>
-          <img src = "images/IMG_3472.jpg" alt = ""/>
+        <!-- the classes are also wrote for each img so if you want to change the frame of each, not touching the description under each img than you can use class = "nature"-->
+        <div class="IMG">
+          <img
+            src="images/IMG_5205.jpg"
+            class="natureIMGClass"
+            id="img3"
+            alt="Photo of nature made on phone camera"
+          />
         </div>
-        
       </div>
 
+      <div class="NatureTwo">
+        <div class="IMG">
+          <img
+            src="images/IMG_5621.jpg"
+            class="natureIMGClass"
+            id="img4"
+            alt="Photo of nature made on phone camera"
+          />
+        </div>
+        <div class="IMG">
+          <img
+            src="images/IMG_7373.jpg"
+            class="natureIMGClass"
+            id="img5"
+            alt="Photo of nature made on phone camera"
+          />
+        </div>
+        <div class="IMG">
+          <img
+            src="images/IMG_3280.JPG"
+            class="natureIMGClass"
+            id="img6"
+            alt="Photo of nature made on phone camera"
+          />
+        </div>
+      </div>
+    </div>
+
+    <a name="a&a_link"></a>
+    <div id="TheSecondSection" class="SectionsDivs">
+      <div class="title1">
+        <h1 class="titles" id="ArtArchitectureID">Art & Architecture</h1>
+      </div>
+
+      <div class="theSecondSectionOne">
+        <div class="IMG">
+          <img
+            src="images/IMG_4752.jpg"
+            class="pictures-from-the-second-section"
+            id="img7"
+          />
+        </div>
+        <div class="IMG" id="img8div">
+          <img
+            src="images/IMG_7740.jpg"
+            class="pictures-from-the-second-section"
+            id="img8"
+          />
+        </div>
+        <!-- <div class = "IMG">    <img src = "images/IMG_4752.jpg" class = "pictures-from-the-second-section" id = "img7"/> </div> -->
+      </div>
+
+      <div class="theSecondSectionTwo">
+        <div class="IMG">
+          <img
+            src="images/IMG_4752.jpg"
+            class="pictures-from-the-second-section"
+            id="img7"
+          />
+        </div>
+        <div class="IMG">
+          <img
+            src="images/IMG_4752.jpg"
+            class="pictures-from-the-second-section"
+            id="img7"
+          />
+        </div>
+        <div class="IMG">
+          <img
+            src="images/IMG_4752.jpg"
+            class="pictures-from-the-second-section"
+            id="img7"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="SectionsDivs">
+      <div class="popupIMG">
+        <span onclick="this.parentNode.parentNode.remove(); return false;"
+          >&times;</span
+        >
+        <img src="images/IMG_3472.jpg" alt="" />
+      </div>
+    </div> -->
+
+    <div class="imgPopupOpen"></div>
   </body>
 </html>
