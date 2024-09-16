@@ -44,22 +44,35 @@ window.onload = function () {
 
 // ----- Cursor ----- //
 
-const coords = { x: 0, y: 0 };
-const circles = document.querySelectorAll(".circle");
+// window.onload = function () {
+  const coords = { x: 0, y: 0 };
+  const circles = document.querySelectorAll(".circle");
 
-circles.forEach(function (circle) {
-  circle.x = 0;
-  circle.y = 0;
-});
-
-window.addEventListener("mousemove", function (e) {
-  coords.x = e.clientX;
-  coords.y = e.clientY;
-
-  // console.log(coords);
-
-  circles.forEach(function (circle, index) {
-    circle.style.left = coords.x + "px";
-    circle.style.top = coords.y + "px";
+  circles.forEach(function (circle) {
+    circle.x = 0;
+    circle.y = 0;
   });
-});
+
+  window.addEventListener("mousemove", function (e) {
+    coords.x = e.clientX;
+    coords.y = e.clientY;
+
+    animateCircles();
+  });
+
+  function animateCircles() {
+    let x = coords.x;
+    let y = coords.y;
+
+    circles.forEach(function (circle, index) {
+      circle.style.left = coords.x - 12 + "px";
+      circle.style.top = coords.y - 12 + "px";
+      circle.x = x;
+      circle.y = y;
+
+      const nextCircle = circles[index + 1] || circles[0];
+      x += (next.Circle.x - x) * 0.5;
+      y += (next.Circle.y - y) * 0.5;
+    });
+  }
+// };
