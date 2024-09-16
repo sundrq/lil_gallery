@@ -42,12 +42,12 @@ window.onload = function () {
 //   document.querySelector('.popupIMG').style.display = 'none';
 //   }
 
-// ----- Cursos ----- //
+// ----- Cursor ----- //
 
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 
-circles.forEach(function (circles) {
+circles.forEach(function (circle) {
   circle.x = 0;
   circle.y = 0;
 });
@@ -55,6 +55,8 @@ circles.forEach(function (circles) {
 window.addEventListener("mousemove", function (e) {
   coords.x = e.clientX;
   coords.y = e.clientY;
+
+  // console.log(coords);
 
   circles.forEach(function (circle, index) {
     circle.style.left = coords.x + "px";

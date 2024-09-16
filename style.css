@@ -729,7 +729,7 @@ nav #nav_links {
 
 /* --------------- Cursor ------------------*/
 
-.cursos {
+.circle {
   height: 24px;
   width: 24px;
   border-radius: 24px;
@@ -737,5 +737,5 @@ nav #nav_links {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 1000;
+  /* z-index: 1000; */
 }
