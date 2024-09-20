@@ -44,7 +44,7 @@ window.onload = function () {
 
 // ----- Cursor ----- //
 
-// window.onload = function () {
+window.onload = function () {
   const coords = { x: 0, y: 0 };
   const circles = document.querySelectorAll(".circle");
 
@@ -71,8 +71,8 @@ window.onload = function () {
       circle.y = y;
 
       const nextCircle = circles[index + 1] || circles[0];
-      x += (next.Circle.x - x) * 0.5;
-      y += (next.Circle.y - y) * 0.5;
+      x += (nextCircle.x - x) * 0.3;
+      y += (nextCircle.y - y) * 0.3;
     });
   }
-// };
+};
